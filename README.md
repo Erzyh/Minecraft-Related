@@ -1,18 +1,26 @@
-# Minecraft-Related
+<h1 align="center">Minecraft-Related</h1>
 
-마인크래프트 플러그인 및 스크립트 모음
+<p align="center">
+  마인크래프트 플러그인 및 스크립트 모음
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-Plugin-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Skript-Script-4EAA25?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Minecraft-1.19--1.20-62B47A?style=flat-square&logo=minecraft&logoColor=white"/>
+</p>
 
 ---
 
-## Plugins
+## 🔌 Plugins
 
 | 이름 | 설명 | 버전 |
 | --- | --- | --- |
-| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | 1.0 |
-| [EconomyXTA](./Plugins/EconomyXTA) | 경제 플러그인 | 1.19.3 |
-| [Stock](./Plugins/Stock) | 주식 플러그인 | 1.20.4 |
+| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | ![](https://img.shields.io/badge/v1.0-release-blue?style=flat-square) |
+| [EconomyXTA](./Plugins/EconomyXTA) | 경제 플러그인 | ![](https://img.shields.io/badge/1.19.3-gray?style=flat-square) |
+| [Stock](./Plugins/Stock) | 주식 플러그인 | ![](https://img.shields.io/badge/1.20.4-gray?style=flat-square) |
 
-## Skripts
+## 📜 Skripts
 
 | 이름 | 설명 | 명령어 |
 | --- | --- | --- |
