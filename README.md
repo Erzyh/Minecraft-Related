@@ -8,7 +8,7 @@
 
 | 이름 | 설명 | 버전 |
 | --- | --- | --- |
-| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | 1.0 |
+| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | [1.0](https://github.com/Erzyh/Aestas/releases/tag/1.0) |
 | [EconomyXTA](./Plugins/EconomyXTA) | 경제 플러그인 | 1.19.3 |
 | [Stock](./Plugins/Stock) | 주식 플러그인 | 1.20.4 |
 
