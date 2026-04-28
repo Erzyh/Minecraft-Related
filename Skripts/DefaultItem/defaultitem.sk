@@ -1,0 +1,56 @@
+variables:
+    {current.version} = "1.0" # 스크립트 버전입니다. 절대 수정하지 마세요.
+    {dfi.%player%} = false
+
+options:
+    ! : &2[&6System&2]&f
+
+# ----- 초기화 명령어
+
+command /기본템초기화 [<offlineplayer>]:
+    permission: dfitem.reset
+    trigger:
+        set {dfi.%arg-1%} to false
+        message "{@!} %arg-1%님의 기본템 획득 여부를 초기화하였습니다." to player
+
+
+# ----- 기본템 설정 명령어
+
+command /기본템설정:
+    permission: dfitem.set
+    trigger:
+        open chest with 3 row named "&0기본템 설정" to player
+        set {_dfi} to 0
+        loop {default.item::*}:
+            set slot {_dfi} of current inventory of player to loop-value
+            add 1 to {_dfi}
+
+on inventory close:
+    if name of player's current inventory is "&0기본템 설정":
+        delete {default.item::*}
+        set {_dfi} to 0
+        loop 27 times:
+            add slot {_dfi} of current inventory of player to {default.item::*}
+            add 1 to {_dfi}
+        message "{@!} 기본템을 설정하였습니다." to player
+
+# ----- 기본템 받기 (유저)
+
+command /기본템:
+    trigger:
+        if {dfi.%player%} is false:
+            message "{@!} 1초 후 GUI가 열릴 경우 아이템을 가져가세요." to player
+            message "{@!} 기본템 설정 GUI를 닫을 경우 다시 여실 수 없습니다." to player
+            wait 1 seconds
+            open chest with 3 row named "&4아이템을 가져가세요." to player
+            set {_dfi} to 0
+            loop {default.item::*}:
+                set slot {_dfi} of current inventory of player to loop-value
+                add 1 to {_dfi}
+        if {dfi.%player%} is true:
+            message "{@!} 이미 기본템을 받으셨습니다." to player
+
+on inventory close:
+    if name of player's current inventory is "&4아이템을 가져가세요.":
+        set {dfi.%player%} to true
+        message "{@!} 기본템을 받으셨습니다. (이후 다시 여실 수 없습니다.)" to player
