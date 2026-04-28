@@ -1,0 +1,48 @@
+# nextUpdateTime: 건드리지 마세요.
+# updateInterval: 주식이 변동하는 시간입니다. 분 단위입니다.
+nextUpdateTime:
+updateInterval: 720
+
+
+stocks:
+  # 주식명:
+    # defaultPrice: 초기값입니다.
+    # upperLimit: 상한가입니다. 이 금액을 초과할 수 없습니다. 0으로 설정 시 제한 없이 상승합니다.
+    # lowerLimit: 하한가입니다. 이 금액 미만으로 내려갈 경우 상장폐지됩니다.
+    # minPercent: 최소 변동치입니다. (최소 변동치 ~ 최대 변동치 사이에서 가격이 변동됩니다.)
+    # maxPercent: 최대 변동치입니다. (최소가 5, 최대가 50일 경우 5% ~ 50% 사이에서 가격이 변동됩니다.)
+    # fluctuationProbability: 변동 확률입니다. 50으로 설정 시 50% 확률로 가격이 변동합니다.
+    # riseProbability: 상승 확률입니다. 50으로 설정 시 50% 확률로 가격이 오릅니다.
+    # shareIssuance: 주식 발행 수입니다. 구매 가능한 주식 수이기도 합니다. 0으로 설정 시 제한 없이 구매 가능합니다.
+    # purchaseLimit: 인당 구매 제한입니다. 0으로 설정 시 제한 없이 구매 가능합니다.
+    # previousPrice: currentPrice가 되기 이전 값입니다.
+    # currentPrice: 현재 주식 가격입니다.
+    # isDelisted: 상장폐지 여부입니다.
+    # remainingStocks: 남은 주식 수입니다. 만약 초기에 변경 시 shareIssuance와 동일하게 설정해주세요.
+  Stock1:
+    defaultPrice: 100
+    upperLimit: 1000
+    lowerLimit: 50
+    minPercent: 5
+    maxPercent: 20
+    fluctuationProbability: 50
+    riseProbability: 50
+    shareIssuance: 1000
+    purchaseLimit: 100
+    previousPrice: 100
+    currentPrice: 100
+    isDelisted: false
+    remainingStocks: 100
+  Stock2:
+    defaultPrice: 150
+    upperLimit: 1500
+    lowerLimit: 75
+    minPercent: 5
+    maxPercent: 25
+    fluctuationProbability: 60
+    riseProbability: 60
+    shareIssuance: 500
+    purchaseLimit: 50
+    previousPrice: 100
+    currentPrice: 100
+    isDelisted: false
