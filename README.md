@@ -16,7 +16,7 @@
 
 | 이름 | 설명 | 버전 |
 | --- | --- | --- |
-| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | ![](https://img.shields.io/badge/v1.0-release-blue?style=flat-square) |
+| [Aestas](./Plugins/Aestas) | 커스텀 낚시 플러그인 | ![](https://img.shields.io/badge/v1.0-gray?style=flat-square) |
 | [EconomyXTA](./Plugins/EconomyXTA) | 경제 플러그인 | ![](https://img.shields.io/badge/1.19.3-gray?style=flat-square) |
 | [Stock](./Plugins/Stock) | 주식 플러그인 | ![](https://img.shields.io/badge/1.20.4-gray?style=flat-square) |
 
